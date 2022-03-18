@@ -2,10 +2,10 @@
 authors = ["Matt Ickstadt <mattico8@gmail.com>"]
 license = "MIT/Apache-2.0"
 name = "elasticlunr-rs"
-version = "2.3.15"
+version = "2.3.141"
 description = "A partial port of elasticlunr.js to Rust for generating static document search indexes"
 documentation = "https://docs.rs/elasticlunr-rs"
-repository = "https://github.com/mattico/elasticlunr-rs"
+repository = "https://github.com/shijunti19/elasticlunr-rs"
 keywords = ["search", "index", "indexing", "lunr", "elasticlunr"]
 exclude = ["tests/lunr-fixture-gen/**"]
 readme = "README.md"
