@@ -1,8 +1,6 @@
 //! Defines the pipeline which processes text for inclusion in the index. Most users do not need
 //! to use this module directly.
 
-use lindera::mode::Mode;
-use lindera::tokenizer::{Tokenizer, TokenizerConfig};
 use serde::ser::{Serialize, SerializeSeq, Serializer};
 /// Splits a text string into a vector of individual tokens.
 pub fn tokenize(text: &str) -> Vec<String> {
@@ -26,6 +24,8 @@ pub fn tokenize_chinese(text: &str) -> Vec<String> {
 
 #[cfg(feature = "ja")]
 pub fn tokenize_japanese(text: &str) -> Vec<String> {
+  use lindera::mode::Mode;
+  use lindera::tokenizer::{Tokenizer, TokenizerConfig};
   let config = TokenizerConfig {
     mode: Mode::Normal,
     ..TokenizerConfig::default()
