@@ -55,7 +55,7 @@ macro_rules! make_stemmer {
 
 /// Used to configure the `Index` for a specific lanugage.
 #[derive(
-    Copy, Clone, Eq, PartialEq, Debug, EnumString, ToString, EnumIter, Serialize, Deserialize,
+    Copy, Clone, Eq, PartialEq, Debug, EnumString, Display, EnumIter, Serialize, Deserialize,
 )]
 pub enum Language {
     English,
@@ -257,4 +257,3 @@ pub mod sv;
 pub mod tr;
 #[cfg(feature = "zh")]
 pub mod zh;
-
